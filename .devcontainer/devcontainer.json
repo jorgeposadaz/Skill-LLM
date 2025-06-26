@@ -1,0 +1,12 @@
+{
+  "name": "Skill-LLM Dev",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "."
+  },
+  "postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt openai pandas openpyxl tqdm",
+  "remoteUser": "vscode",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  }
+}
